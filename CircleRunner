@@ -4,20 +4,12 @@ public class CircleRunner
     public static void main(String[] args)
     {
         Scanner kb=new Scanner(System.in);
-        while(true)
-        {
-            System.out.print("What is the radius of this circle? ");
-            double r=kb.nextDouble();
-            Circle circ=new Circle(r);
-            System.out.println("The diameter of this circle is "+circ.diameter());
-            System.out.println("The circumference of this circle is "+circ.circumference());
-            System.out.println("The area of this circle is "+circ.area());
-            System.out.print("Would you like to solve for another circle? y or n : ");
-            if(kb.nextLine().equals("n"))
-            {
-              break;
-            }
-        }
+        System.out.print("What is the radius of this circle? ");
+        double r=kb.nextDouble();
+        Circle circ=new Circle(r);
+        System.out.println("The diameter of this circle is "+circ.diameter());
+        System.out.println("The circumference of this circle is "+circ.circumference());
+        System.out.println("The area of this circle is "+circ.area());
     }
 }
     
