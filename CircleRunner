@@ -13,7 +13,7 @@ public class CircleRunner
             System.out.println("The circumference of this circle is "+circ.circumference());
             System.out.println("The area of this circle is "+circ.area());
             System.out.print("Would you like to solve for another circle? y or n : ");
-            if(kb.nextLn().equals("n"))
+            if(kb.nextLine().equals("n"))
             {
               break;
             }
